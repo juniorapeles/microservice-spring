@@ -1,2 +1,5 @@
-# webservice-spring
-# webservice-spring
+# microservice-spring dev dojo
+
+- O auth
+- Docker
+- gateway
