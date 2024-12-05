@@ -4,10 +4,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: my_database
-      MYSQL_USER: my_user
-      MYSQL_PASSWORD: my_password
+      MYSQL_ROOT_PASSWORD: root_password  # Define a senha para o root
+      MYSQL_DATABASE: my_database         # Cria o banco de dados automaticamente
+      MYSQL_USER: devdojo_user            # Cria um usuário adicional (não root)
+      MYSQL_PASSWORD: devdojo             # Define a senha para o usuário adicional
     volumes:
       - mysql_data:/var/lib/mysql
     deploy:
